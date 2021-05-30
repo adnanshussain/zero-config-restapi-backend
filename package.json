@@ -1,0 +1,32 @@
+{
+  "name": "zero-config-restapi-backend",
+  "version": "0.1.0",
+  "description": "A Zero Configuration JSON REST API Backend Server, can connect to [MongoDB,] and automatically produces all possible API routes & JSON responses based on the Db Schema & Data (which can further be configured manually). Filters, Searching, Sorting... The Works !!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-watch": "babel src --out-dir babel-dist --extensions '.ts,.tsx' --watch",
+    "babel-build": "babel src --out-dir babel-dist --extensions '.ts,.tsx'",
+    "all-builds-watch": "(babel src/index.ts --out-dir babel-dist --extensions '.ts,.tsx' --watch) && (tsc src/index.ts --outDir tsc-dist --watch)"
+  },
+  "keywords": [
+    "json-api",
+    "json-server",
+    "rest",
+    "api",
+    "backend",
+    "mongodb",
+    "rest-api",
+    "zero-config",
+    "auto-routing"
+  ],
+  "author": "Adnan S Hussain",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "jest": "^27.0.1"
+  }
+}
