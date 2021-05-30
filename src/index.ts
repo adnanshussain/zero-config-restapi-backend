@@ -1,31 +1,19 @@
-interface User {
+const a: String = "Adnan 101";
+
+interface IApi {
     name: String;
-    id: number;
-
-    toString();
-    greet(message);
+    fullName();
 }
 
-class UserAccount {
-    name: string;
-    id: number;
-
-    constructor(name: string, id: number) {
-        this.name = name;
-        this.id = id;
+class A implements IApi {
+    fullName() {
+        throw new Error("Method not implemented.");
     }
+    name: String;
 
-    toString() {
-        return ("Chal kat MKL !");
-    }
-
-    greet(message: string) {
-        console.log(`Hello ${message}, today is ${(new Date()).toDateString()}!`);
-    }
 }
 
+var user: IApi = new A();
 
-const user: User = new UserAccount("Murphy", 1);
-
-console.log(user.toString());
-user.greet("Oye Dallay !");
+user.name = "Gaandu";
+console.log(user.name);
