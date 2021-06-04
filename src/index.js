@@ -14,3 +14,7 @@ var UserAccount = /** @class */ (function () {
 var user = new UserAccount("Murphy", 1);
 console.log(user.toString());
 user.greet("Oye Dallay !");
+
+function reverse(text) {
+
+}

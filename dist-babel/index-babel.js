@@ -10,6 +10,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var a = "Adnan 101";
 
+// Some fucking comment
 var A = /*#__PURE__*/function () {
   function A() {
     _classCallCheck(this, A);
